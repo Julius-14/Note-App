@@ -1,4 +1,5 @@
 const add = require('./add')
+const present = require('./present')
 const read = require('./read')
 const write = require('./write')
 
@@ -16,4 +17,8 @@ if(cmd[2] == 'add') {
     var oldNote = read()
 
     add(note, oldNote)
+}
+
+if(cmd[2] == 'read') {
+    present(read())
 }
