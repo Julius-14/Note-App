@@ -1,9 +1,19 @@
-const cmd = process.argv[2];
+const add = require('./add')
+const read = require('./read')
+const write = require('./write')
 
-const write = require('./write');
+const cmd = process.argv
 
-write(cmd);
+var note = {}
 
-const read = require('./read');
+if(cmd[2] == 'add') {
+    note = {
+        id: cmd[3],
+        title: cmd[4],
+        body: cmd[5]
+    }
 
-console.log(read());
+    var oldNote = read()
+
+    add(note, oldNote)
+}
