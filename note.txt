@@ -1,1 +1,1 @@
-[{"id":"01","title":"hello","body":"world"},{"id":"02","title":"hi","body":"welcome"}]
+[{"id":"02","title":"hi","body":"welcome"}]
